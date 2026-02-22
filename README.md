@@ -11,9 +11,9 @@ docker compose build
 
 ## Usage
 
-**Start an interactive shell inside the container:**
+**Access the container bash shell:**
 ```bash
-docker compose run --rm cpp-env
+docker compose run --rm cpp-env bash
 ```
 
 You'll land in `/projects`, which maps to the `projects/` folder on your Mac.
@@ -21,6 +21,11 @@ You'll land in `/projects`, which maps to the `projects/` folder on your Mac.
 **Compile and run a C++ file:**
 ```bash
 g++ hello.cpp -o hello && ./hello
+```
+
+**Compile and run a C file:**
+```bash
+gcc hello.c -o hello && ./hello
 ```
 
 **Exit the container:**
