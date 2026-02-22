@@ -1,0 +1,8 @@
+services:
+  cpp-env:
+    build: .
+    volumes:
+      - ./projects:/projects
+    working_dir: /projects
+    stdin_open: true
+    tty: true
