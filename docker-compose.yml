@@ -2,7 +2,7 @@ services:
   cpp-env:
     build: .
     volumes:
-      - ./projects:/projects
-    working_dir: /projects
+      - ./:/sandbox
+    working_dir: /sandbox
     stdin_open: true
     tty: true
